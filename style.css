@@ -60,7 +60,7 @@ nav{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-70%);
     text-align: center;
     margin-top: 100px;
 
@@ -213,4 +213,9 @@ input[type="radio"]{
     padding: 0 20px;
     max-height: 0;
     overflow: hidden;
+    transition: maxheight 1s, padding 1s;
+}
+.accordian input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
 }
